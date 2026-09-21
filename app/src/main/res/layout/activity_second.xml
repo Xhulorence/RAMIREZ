@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_gradient"
+    tools:context=".SecondActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="371dp"
+        android:layout_height="327dp"
+        android:layout_marginStart="-60dp"
+        android:layout_marginTop="40dp"
+        android:contentDescription="Bible Image"
+        android:scaleType="centerInside"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/book" />
+
+    <TextView
+        android:id="@+id/tvVerseBody"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="-20dp"
+        android:layout_marginEnd="40dp"
+        android:text="But the fruit of the Spirit is love, joy, peace, forbearance, kindness, goodness, faithfulness,"
+        android:textColor="#0AAB5E"
+        android:textSize="26sp"
+        android:textStyle="normal"
+        app:layout_constraintBottom_toTopOf="@+id/tvVerseRef"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        app:layout_constraintVertical_chainStyle="packed" />
+
+    <TextView
+        android:id="@+id/tvVerseRef"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="40dp"
+        android:layout_marginTop="16dp"
+        android:text="Galatians 5:22"
+        android:textColor="#F3B21B"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvVerseBody"
+        app:layout_constraintBottom_toTopOf="@+id/btnSuperStart" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnSuperStart"
+        android:layout_width="220dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="40dp"
+        android:text="Start"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:backgroundTint="#0AAB5E"
+        app:cornerRadius="30dp"
+        app:layout_constraintBottom_toTopOf="@+id/btnBack"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvVerseRef" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnBack"
+        android:layout_width="180dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="16dp"
+        android:text="Back"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:backgroundTint="#D32F2F"
+        app:cornerRadius="26dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnSuperStart"
+        android:layout_marginBottom="40dp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

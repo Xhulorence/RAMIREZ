@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_gradient"
+    tools:context=".MainActivity">
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnStart2"
+        android:layout_width="0dp"
+        android:layout_height="90dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:text=""
+        android:textAllCaps="false"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:backgroundTint="#FFFF"
+        app:cornerRadius="26dp"
+        app:elevation="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/Logo"
+        android:layout_width="259dp"
+        android:layout_height="224dp"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="100dp"
+        android:contentDescription="Logo"
+        android:src="@drawable/logo3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageViewProfile"
+        android:layout_width="46dp"
+        android:layout_height="48dp"
+        android:src="@drawable/profile1"
+        android:contentDescription="Profile Picture"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp" />
+
+    <ImageView
+        android:id="@+id/textView9"
+        android:layout_width="46dp"
+        android:layout_height="48dp"
+        android:src="@drawable/profile1"
+        android:contentDescription="Profile Image"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp" />
+
+    <ImageView
+        android:id="@+id/textView12"
+        android:layout_width="34dp"
+        android:layout_height="40dp"
+        android:src="@drawable/h"
+        android:contentDescription="Icon H"
+        app:layout_constraintTop_toTopOf="@id/btnStart2"
+        app:layout_constraintBottom_toBottomOf="@id/btnStart2"
+        app:layout_constraintStart_toStartOf="@id/btnStart2"
+        app:layout_constraintEnd_toStartOf="@+id/textView11"
+        app:layout_constraintHorizontal_chainStyle="spread" />
+
+    <ImageView
+        android:id="@+id/textView11"
+        android:layout_width="34dp"
+        android:layout_height="40dp"
+        android:src="@drawable/p"
+        android:contentDescription="Icon P"
+        app:layout_constraintTop_toTopOf="@id/btnStart2"
+        app:layout_constraintBottom_toBottomOf="@id/btnStart2"
+        app:layout_constraintStart_toEndOf="@+id/textView12"
+        app:layout_constraintEnd_toStartOf="@+id/textView13" />
+
+    <ImageView
+        android:id="@+id/textView13"
+        android:layout_width="34dp"
+        android:layout_height="40dp"
+        android:src="@drawable/b"
+        android:contentDescription="Icon B"
+        app:layout_constraintTop_toTopOf="@id/btnStart2"
+        app:layout_constraintBottom_toBottomOf="@id/btnStart2"
+        app:layout_constraintStart_toEndOf="@+id/textView11"
+        app:layout_constraintEnd_toStartOf="@+id/textView14" />
+
+    <ImageView
+        android:id="@+id/textView14"
+        android:layout_width="34dp"
+        android:layout_height="40dp"
+        android:src="@drawable/m"
+        android:contentDescription="Icon M"
+        app:layout_constraintTop_toTopOf="@id/btnStart2"
+        app:layout_constraintBottom_toBottomOf="@id/btnStart2"
+        app:layout_constraintStart_toEndOf="@+id/textView13"
+        app:layout_constraintEnd_toEndOf="@id/btnStart2" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-condensed"
+        android:text="Mon, August 24"
+        android:textColor="#0AAB5E"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.46" />
+
+    <TextView
+        android:id="@+id/textView15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-condensed"
+        android:text="Home"
+        android:textColor="#2E7D32"
+        android:textSize="15dp"
+        android:textStyle="normal"
+        app:layout_constraintTop_toBottomOf="@id/btnStart2"
+        app:layout_constraintStart_toStartOf="@id/textView12"
+        app:layout_constraintEnd_toEndOf="@id/textView12" />
+
+    <TextView
+        android:id="@+id/textView16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-condensed"
+        android:text="Pray"
+        android:textColor="#8E8E93"
+        android:textSize="15dp"
+        android:textStyle="normal"
+        app:layout_constraintTop_toBottomOf="@id/btnStart2"
+        app:layout_constraintStart_toStartOf="@id/textView11"
+        app:layout_constraintEnd_toEndOf="@id/textView11" />
+
+    <TextView
+        android:id="@+id/textView19"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-condensed"
+        android:text="Bible"
+        android:textColor="#8E8E93"
+        android:textSize="15dp"
+        android:textStyle="normal"
+        app:layout_constraintTop_toBottomOf="@id/btnStart2"
+        app:layout_constraintStart_toStartOf="@id/textView13"
+        app:layout_constraintEnd_toEndOf="@id/textView13" />
+
+    <TextView
+        android:id="@+id/textView18"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-condensed"
+        android:text="Me"
+        android:textColor="#8E8E93"
+        android:textSize="15dp"
+        android:textStyle="normal"
+        app:layout_constraintTop_toBottomOf="@id/btnStart2"
+        app:layout_constraintStart_toStartOf="@id/textView14"
+        app:layout_constraintEnd_toEndOf="@id/textView14" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-condensed"
+        android:text="God Loves you! Maubert Fred "
+        android:textColor="#0AAB5E"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.337"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.066" />
+
+    <TextView
+        android:id="@+id/textViewMorningVerse"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-condensed"
+        android:text="MORNING VERSE"
+        android:textColor="#F3B21B"
+        android:textSize="45dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.538" />
+
+    <TextView
+        android:id="@+id/textViewReference"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-condensed"
+        android:text="Galatians 5:22"
+        android:textColor="#F3B21B"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.62" />
+
+    <!-- Outer Border Container -->
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnSuperStart"
+        android:layout_width="280dp"
+        android:layout_height="80dp"
+        android:text="Start"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:backgroundTint="#0AAB5E"
+        app:cornerRadius="40dp"
+        app:elevation="4dp"
+        app:layout_constraintBottom_toTopOf="@+id/btnStart2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewReference"
+        app:layout_constraintVertical_bias="0.3" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

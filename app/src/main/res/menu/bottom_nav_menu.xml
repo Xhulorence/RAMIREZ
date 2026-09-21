@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/nav_home"
+        android:icon="@drawable/h"
+        android:title="Home" />
+    <item
+        android:id="@+id/nav_pray"
+        android:icon="@drawable/p"
+        android:title="Pray" />
+    <item
+        android:id="@+id/nav_bible"
+        android:icon="@drawable/b"
+        android:title="Bible" />
+    <item
+        android:id="@+id/nav_me"
+        android:icon="@drawable/m"
+        android:title="Me" />
+</menu>
