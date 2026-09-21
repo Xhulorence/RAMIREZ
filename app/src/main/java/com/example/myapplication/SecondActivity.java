@@ -26,5 +26,14 @@ public class SecondActivity extends AppCompatActivity {
                 finish();
             }
         });
+
+        MaterialButton btnSuperStart = findViewById(R.id.btnSuperStart);
+        btnSuperStart.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(SecondActivity.this, ThirdActivity.class);
+                startActivity(intent);
+            }
+        });
     }
 }

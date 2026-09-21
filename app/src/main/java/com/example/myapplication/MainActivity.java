@@ -28,10 +28,8 @@ public class MainActivity extends AppCompatActivity {
             return insets;
         });
 
-        // Initialize the Start button
         btnSuperStart = findViewById(R.id.btnSuperStart);
 
-        // When pressed, go to SecondActivity
         btnSuperStart.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
